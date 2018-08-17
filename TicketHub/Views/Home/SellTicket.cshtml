@@ -1,0 +1,68 @@
+﻿
+@using TicketHub.Models
+@model Ticket
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/styles.css" />
+    <title></title>
+</head>
+<body>
+    <
+    <div class="panel panel-success">
+        <div class="panel-heading text-center">
+            <h4>Sell Ticket</h4>
+        </div>
+        
+        <div class="panel-body">
+            @using (Html.BeginForm())
+            {
+
+
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.Label("Section", "Enter Section:")<br />
+                    @Html.TextBox("Section", null, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.Label("Row", "Enter Row:")<br />
+                    @Html.TextBox("Row", null, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.Label("Seat", "Enter Seat:")<br />
+                    @Html.TextBox("Seat", null, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.Label("Admission", "Enter Admission:")<br />
+                    @Html.TextBox("Admission", null, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.Label("Name", "Enter Name:")<br />
+                    @Html.TextBox("Name", null, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.Label("Date", "Enter Date:")<br />
+                    @Html.TextBox("Date", null, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.Label("Price", "Enter Price:")<br />
+                    @Html.TextBox("Price", null, new { @class = "form-control" })
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success" name="submit" value="true" type="submit">Sell Ticket</button>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>
+
+

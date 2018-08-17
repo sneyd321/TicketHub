@@ -1,0 +1,12 @@
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\bin\TicketService.dll.config
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\bin\TicketService.dll
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\bin\TicketService.pdb
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\bin\EntityFramework.dll
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\bin\EntityFramework.SqlServer.dll
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\bin\EntityFramework.xml
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\bin\EntityFramework.SqlServer.xml
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\obj\Debug\TicketService.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\obj\Debug\TicketService.dll
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\obj\Debug\TicketService.pdb
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\obj\Debug\TicketService.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Source\Repos\TicketHub\TicketService\obj\Debug\TicketService.csproj.CopyComplete

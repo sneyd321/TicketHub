@@ -1,0 +1,58 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Responses</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+</head>
+<body>
+    <div class="panel-body">
+        <h2>Tickets Available</h2>
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>TicketId</th>
+                    <th>Section</th>
+                    <th>Row</th>
+                    <th>Seat</th>
+                    <th>Admission</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var r in (TicketHub.ServiceReference1.Ticket[])ViewBag.ListTickets)
+                {
+
+                    <tr>
+                        <td>@r.TicketId</td>
+                        <td>@r.Section</td>
+                        <td>@r.Row</td>
+                        <td>@r.Seat</td>
+                        <td>@r.Admission</td>
+                        <td>@r.Name</td>
+                        <td>@r.Date</td>
+                        <td>@r.Price</td>
+                    </tr>
+
+
+                }
+            </tbody>
+        </table>
+        <div class="text-center">
+            @Html.ActionLink("Buy", "BuyTicket", null, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Sell", "SellTicket", null, new { @class = "btn btn-primary" })
+
+        </div>
+
+    </div>
+</body>
+</html>

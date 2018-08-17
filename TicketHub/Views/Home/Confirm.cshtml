@@ -1,0 +1,68 @@
+﻿@using TicketHub.Models
+    
+@{
+    Layout = null;
+}
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Responses</title>
+        <link rel="stylesheet" href="~/Content/bootstrap.css" />
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    </head>
+    <body>
+        <div class="panel panel-success">
+            <div class="panel-heading text-center">
+                <h4>Thank You</h4>
+                <h2>Ticket Purchased</h2>
+            </div>
+                
+
+            <table class="table table-sm table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>TicketId</th>
+                        <th>Section</th>
+                        <th>Row</th>
+                        <th>Seat</th>
+                        <th>Admission</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@ViewBag.Id</td>
+                        <td>@ViewBag.Section</td>
+                        <td>@ViewBag.Row</td>
+                        <td>@ViewBag.Seat</td>
+                        <td>@ViewBag.Admission</td>
+                        <td>@ViewBag.Name</td>
+                        <td>@ViewBag.Date</td>
+                        <td>@ViewBag.Price</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            @using (Html.BeginForm())
+            {
+                
+                <div class="text-center">
+                    @Html.ActionLink("Back", "Ticket", null, new { @class = "btn btn-primary" })
+                </div>
+               
+            }
+            
+
+
+
+
+            </div>
+
+    </body>
+</html>
